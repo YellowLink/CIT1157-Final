@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Cats - Strawberry Jam Cat Cafe</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/ourcats.css">
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-logo">
+            <a href="/index.html"><img src="/assets/images/logo.png" alt="Strawberry Jam Cat Cafe Logo"></a>
+        </div>
+        <div class="header-text">
+            <a href="/index.html">Strawberry Jam<br><span>Cat Cafe</span></a>
+        </div>
+        <div class="header-misc">
+            <p><span id="current-date"></span></p>
+            <script>
+                const today = new Date();
+                document.getElementById("current-date").textContent = today.toLocaleDateString();
+            </script>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav-links">
+            <div><a href="/index.html">Home</a></div>
+            <div class="cats-dropdown-container">
+                <button type="button" class="dropbtn">Our Cats</button>
+                <div class="cats-dropdown">
+                    <a href="/cats/kiki.html">Kiki</a>
+                    <a href="/cats/copper.html">Copper</a>
+                    <a href="/cats/peeper.html">Peeper</a>
+                    <a href="/cats/hugo.html">Hugo</a>
+                </div>
+            </div>
+            <div><a href="/documents/directory.html">Directory</a></div>
+            <div><a href="/documents/adoption-survey.html">Adoption</a></div>
+        </div>
+        <div class="nav-search">
+            <div>
+                <form action="https://www.google.com/search" method="GET" target="_blank">
+                    <input type="search" name="search" placeholder="Search Google..." required>
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-ourcats">
+            <div class="title">
+                <h1>Our Wonderful Critters!!</h1>
+            </div>
+            <div class="katze">
+                <div><a href="/cats/kiki.html"><img src="/assets/images/cats/kiki-pfp.jpg" alt="Kiki"></a></div>
+                <div class="links"><a href="/cats/kiki.html">Kiki</a></div>
+            </div>
+            <div class="katze">
+                <div><a href="/cats/peeper.html"><img src="/assets/images/cats/peeper-pfp.jpg" alt="Peeper"></a></div>
+                <div class="links"><a href="/cats/peeper.html">Peeper</a></div>
+            </div>
+            <div class="katze">
+                <div><a href="/cats/copper.html"><img src="/assets/images/cats/copper-pfp.jpg" alt="Copper"></a></div>
+                <div class="links"><a href="/cats/copper.html">Copper</a></div>
+            </div>
+            <div class="katze">
+                <div><a href="/cats/hugo.html"><img src="/assets/images/cats/hugo-pfp.jpg" alt="Hugo"></a></div>
+                <div class="links"><a href="/cats/hugo.html">Hugo</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-top">
+            <div>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/documents/ourcats.html">Our Cats</a></li>
+                    <li><a href="/documents/directory.html">Directory</a></li>
+                    <li><a href="/documents/adoption-survey.html">Adoption</a></li>
+                </ul>
+            </div>
+            <div>
+                <iframe title="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82597.61664376281!2d-112.92798488272538!3d49.6886674280497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x536e864af15acd23%3A0x1c5c78e36295beae!2sLethbridge%2C%20AB!5e0!3m2!1sen!2sca!4v1795229240661!5m2!1sen!2sca"
+                    height="225" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div><a href="https://twitter.com" target="_blank"><img src="/assets/images/twitter.svg" height="30"
+                        alt="twitter logo"></a>
+            </div>
+            <div><a href="https://youtube.com/@yellowlink10" target="_blank"><img src="/assets/images/youtube.svg"
+                        height="30" alt="youtube logo"></a>
+            </div>
+            <div>Copyright &copy; Hazel Crabb-Wexler 2026</div>
+        </div>
+    </div>
+</body>
+
+</html>

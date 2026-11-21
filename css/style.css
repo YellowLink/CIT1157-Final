@@ -1,0 +1,350 @@
+* {
+    font-family: "Sniglet", sans-serif;
+}
+
+html,
+body {
+    min-width: 420px;
+    min-height: 500px;
+    overflow: auto;
+}
+
+div {
+    border-radius: 10px;
+}
+
+body {
+    background-image: url("/assets/images/background_blur.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 98vh;
+}
+
+.header {
+    display: grid;
+    height: 100px;
+    padding: 15px 25px 15px 25px;
+    gap: 10px;
+    background-color: #ff4500;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    color: #ff8ec7;
+}
+
+.header div {
+    text-align: center;
+    align-content: center;
+}
+
+.header-logo {
+    height: 100px;
+}
+
+.header-logo img {
+    height: 100%;
+}
+
+.header-text {
+    align-content: center;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    -webkit-text-stroke: 2px #a40062;
+}
+
+.header-text a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header-text span {
+    font-size: 1.1em;
+    letter-spacing: 0.2em;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    background-color: #ff8ec7;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.nav-links {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    text-align: center;
+    justify-content: start;
+    gap: 30px;
+}
+
+.nav-links div {
+    align-content: center;
+}
+
+.nav-links a {
+    color: inherit;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+.nav-links a:hover {
+    background-color: #ff8b60;
+    border: 1px solid #ff4500;
+}
+
+.nav-search {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: end;
+}
+
+.dropbtn {
+    border: none;
+    background-color: #ff8ec7;
+    font-size: 1em;
+}
+
+.cats-dropdown-container {
+    display: flex;
+    white-space: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.cats-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #ff8ec7;
+    padding: 15px;
+    z-index: 999;
+    top: 100%;
+}
+
+.cats-dropdown a {
+    display: block;
+    padding: 10px;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.cats-dropdown a:hover {
+    background-color: #ff8b60;
+    border: 1px solid #ff4500;
+}
+
+.cats-dropdown-container:hover .cats-dropdown {
+    display: block;
+}
+
+.nav-search input,
+.nav-search button {
+    border-radius: 7px;
+    border: 2px solid black;
+    font-size: 0.8em;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.content div {
+    background-color: rgb(240, 240, 240);
+}
+
+.slideshow {
+    height: 500px;
+    overflow: hidden;
+    border: 3px solid #a40062;
+}
+
+.slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 100%;
+}
+
+.description {
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.schedule {
+    padding: 15px;
+}
+
+.schedule table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    border: 3px dashed black;
+}
+
+.schedule tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+.schedule td {
+    padding: 10px;
+    border: 1px dashed black;
+}
+
+.table-head {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: semi-bold;
+}
+
+.video {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: 15px;
+}
+
+.video h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.video video {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    opacity: 100%;
+}
+
+.footer {
+    background-color: darkslategray;
+    color: white;
+    margin-top: auto;
+    opacity: 90%;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+}
+
+.footer-top div {
+    align-content: center;
+}
+
+.footer-top li {
+    padding: 10px 0px;
+    list-style-type: none;
+    font-size: 1.1em;
+}
+
+.footer-top a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.dropbtn-footer {
+    color: white;
+    border: none;
+    background-color: darkslategray;
+    font-size: 1em;
+}
+
+.cats-dropdown-container-footer {
+    display: flex;
+    white-space: nowrap;
+    flex-direction: row;
+    justify-content: start;
+    position: relative;
+}
+
+.cats-dropdown-footer {
+    display: none;
+    position: absolute;
+    color: black;
+    background-color: #ff8ec7;
+    padding: 15px;
+    z-index: 999;
+    top: 100%;
+}
+
+.cats-dropdown-footer a {
+    display: block;
+    padding: 10px;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.cats-dropdown-footer a:hover {
+    background-color: #ff8b60;
+    border: 1px solid #ff4500;
+}
+
+.cats-dropdown-container-footer:hover .cats-dropdown-footer {
+    display: block;
+}
+
+.footer-top iframe {
+    width: 50vw;
+    margin: 15px;
+}
+
+.footer-bottom {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    justify-content: start;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.footer-bottom div {
+    align-content: center;
+}
+
+/* MOBILE CSS */
+
+@media screen and (max-width: 650px) {
+    .header {
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .header-text {
+        font-size: 1.7em;
+    }
+
+    .header-misc {
+        display: none;
+    }
+
+    .nav {
+        grid-template-columns: auto;
+    }
+
+    .nav-links {
+        grid-template-columns: auto auto auto auto auto;
+        gap: 15px;
+    }
+
+    .nav-search {
+        justify-content: start;
+        margin-top: 10px;
+    }
+
+    .content {
+        grid-template-columns: auto;
+    }
+}

@@ -1,0 +1,54 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    margin: 0px auto 10px auto;
+}
+
+.content-ourcats {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: start;
+    text-align: center;
+    padding: 15px;
+    padding-bottom: 30px;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.content-ourcats img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.katze {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+}
+
+.katze div {
+    align-content: center;
+    font-size: 1.5em;
+}
+
+.links a {
+    color: inherit;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+
+.links a:hover {
+    background-color: #ff8b60;
+    border: 1px solid #ff4500;
+}
+
+@media screen and (max-width: 650px) {
+    .katze {
+        grid-template-columns: auto;
+        padding-bottom: 16px;
+    }
+}

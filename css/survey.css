@@ -1,0 +1,86 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80vw;
+    margin: 0px auto 10px auto;
+}
+
+.content form {
+    width: 100%;
+}
+
+.content-survey {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-survey div {
+    padding: 10px;
+    align-content: center;
+}
+
+.content-survey label,
+.content-survey input,
+.content-survey select,
+.content-survey textarea,
+.content-survey button {
+    margin: 0px 15px;
+}
+
+.content-survey input[type="text"],
+.content-survey input[type="email"],
+.content-survey textarea {
+    width: 80%;
+    align-content: center;
+    padding: 3px 20px;
+}
+
+.content-survey select {
+    width: 60%;
+}
+
+.content-survey button {
+    font-size: 1.3em;
+    padding: 5px 15px;
+}
+
+.single {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+}
+
+.double {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.question {
+    text-align: end;
+    font-size: 1.2em;
+}
+
+.question button {
+    font-size: 1em;
+}
+
+.answer * {
+    text-align: start;
+    font-size: 1em;
+}
+
+#square-footage option {
+    padding: 3px 20px;
+}
+
+@media screen and (max-width: 650px) {
+    .double {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .question {
+        text-align: start;
+    }
+}
